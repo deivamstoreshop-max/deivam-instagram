@@ -2,7 +2,7 @@ import os, sys, json, time, datetime, urllib.request, urllib.parse, urllib.error
 HOST = os.environ.get("IG_API_HOST", "https://graph.facebook.com/v21.0")
 TOKEN = os.environ["IG_TOKEN"]; UID = os.environ["IG_USER_ID"]
 REPO = os.environ.get("GITHUB_REPOSITORY", "deivamstoreshop-max/deivam-instagram")
-root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+root = os.path.dirname(os.path.abspath(__file__))
 
 def call(method, path, **params):
     params["access_token"] = TOKEN
